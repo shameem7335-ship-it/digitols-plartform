@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI assistance.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Kit",
+    "description": "Design social media posts and banners easily.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": ["500+ templates", "Drag & drop editor", "HD export"],
+    "icon": "Image"
+  },
+  {
+    "id": 3,
+    "name": "AI Copywriting Tool",
+    "description": "Generate marketing copy using AI.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Ad copy generator", "SEO optimization", "Multi-language"],
+    "icon": "PenTool"
+  },
+  {
+    "id": 4,
+    "name": "Website UI Kit",
+    "description": "Pre-built UI components for fast web design.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["200+ components", "Figma files", "Responsive design"],
+    "icon": "Layout"
+  },
+  {
+    "id": 5,
+    "name": "Video Editing Suite",
+    "description": "Edit videos with powerful tools.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": ["4K export", "Transitions", "Audio editing"],
+    "icon": "Video"
+  },
+  {
+    "id": 6,
+    "name": "Logo Maker",
+    "description": "Create stunning logos in minutes.",
+    "price": 10,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["AI logo generator", "Vector files", "Custom colors"],
+    "icon": "Feather"
+  },
+  {
+    "id": 7,
+    "name": "Email Marketing Tool",
+    "description": "Automate and manage email campaigns.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Email templates", "Analytics", "Automation"],
+    "icon": "Mail"
+  },
+  {
+    "id": 8,
+    "name": "Stock Image Library",
+    "description": "Access thousands of premium images.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": ["10k+ images", "HD quality", "Commercial use"],
+    "icon": "ImagePlus"
+  },
+  {
+    "id": 9,
+    "name": "Task Management App",
+    "description": "Organize your work efficiently.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Task tracking", "Collaboration", "Reminders"],
+    "icon": "CheckSquare"
+  },
+  {
+    "id": 10,
+    "name": "Portfolio Builder",
+    "description": "Build and showcase your portfolio online.",
+    "price": 35,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Custom domains", "Templates", "SEO ready"],
+    "icon": "Globe"
+  }
+]
