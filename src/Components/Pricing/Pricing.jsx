@@ -5,9 +5,9 @@ const Pricing = () => {
         <div className='container mx-auto '>
                     <div className='text-center items-center'>
                     <h1 className='font-bold text-2xl'>Simple, Transparent Pricing</h1>
-                    <h1>Choose the plan that fits your needs. Upgrade or downgrade anytime.</h1>
+                    <h1 className='px-15'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</h1>
                     </div>
-                    <div className='flex justify-around m-20 gap-10'>
+                    <div className='grid grid-cols-1  sm:grid-cols-3 justify-around m-4 sm:m-20 gap-10'>
                                
                         <div className='shadow p-10 space-y-8 rounded-md transition-all duration-300 hover:scale-105 hover:bg-linear-to-r hover:from-[#4F39F6] hover:to-[#9514FA] hover:text-white'>
                            <h1 className='font-bold'>Starter</h1>

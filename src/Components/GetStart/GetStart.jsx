@@ -8,9 +8,9 @@ const GetStart = () => {
         <div className='container mx-auto'>
             <div className='text-center items-center'>
             <h1 className='font-bold text-2xl'>Get start in 3 step</h1>
-            <h1>Start using premium digital tools in minutes, not hours.</h1>
+            <h1 className='px-15'>Start using premium digital tools in minutes, not hours.</h1>
             </div>
-            <div className='flex m-20 gap-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-3 m-4 sm:m-20 gap-10'>
                        <div>
                 <div className='shadow'>
                     <div className='flex justify-end'>

@@ -26,7 +26,7 @@ const Products = ({cartItem, setCartItem}) => {
         <div className='container mx-auto m-10'>
             <div className='text-center'>
                 <h1 className='font-bold text-2xl m-5'>Premium Digital Tools</h1>
-                <p>Choose from our curated collection of premium digital products designedto<br></br> boost your productivity and creativity.</p>
+                <p className='p-10'>Choose from our curated collection of premium digital products designedto<br></br> boost your productivity and creativity.</p>
             </div>
             <div className='flex gap-1 justify-center m-5'>
                <button

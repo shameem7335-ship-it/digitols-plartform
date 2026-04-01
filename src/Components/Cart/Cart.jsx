@@ -1,16 +1,20 @@
 import React from 'react';
 import productImg from '../../assets/products/social-media.png';
+import { toast } from 'react-toastify';
 
 const Cart = ({productsPromise, setCartItem, cartItem}) => {
     console.log(cartItem)
 
       const handleRemove = (cart) => {
         const removeCart = cartItem.filter(newCart => newCart.name !== cart.name);
-        setCartItem(removeCart)
+        setCartItem(removeCart);
+        toast('removed from cart')
       }
     return (
         <div className='flex flex-col gap-5'>
             <h1 className='text-2xl font-bold'>Your Cart</h1>
+
+
 
             {
               cartItem.length === 0 ? (<h1 className='font-bold text-center text-3xl shadow py-10'>Your card is empty</h1>) :

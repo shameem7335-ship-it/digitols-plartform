@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import img1 from '../../assets/products/social-media.png';
+import img2 from '../../assets/products/img-4.png';
+import img3 from '../../assets/products/img-6.png'
+
 
 
 const Card = ({ handleCart, productData, setCartItem, cartItem}) => {
     return (
         <div>
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1  sm:grid-cols-3 gap-4'>
             {productData.map((product, index)  => {
               console.log(product.img)
               console.log(product.name)
@@ -13,23 +18,25 @@ const Card = ({ handleCart, productData, setCartItem, cartItem}) => {
 
               const handleCart = () => {
       setCartItem ([...cartItem, product])
-      setBtnText(false)
+      setBtnText(false);
+   toast('added to cart')
 
     }
      return <div key={index}  >
                 <div className="card w-96 bg-base-100 shadow-sm ">
   <div className="card-body">
-    <div className=' flex justify-end'>
+    <div className=' flex justify-center sm:justify-end'>
     <span className={` px-3 py-1 items-center text-center rounded-full
     ${product.tag==='popular' ? ' text-[#BB4D00] bg-[#FEF3C6]': product.tag==='best seller' ? 'text-[#627382] bg-[#E1E7FF]' : product.tag==='new' ?'text-[#0A883E] bg-[#DBFCE7]' : ''}
     `}
     >{product.tag}</span>
     </div>
-    <div className='border border-2'>
+    <div className=''>
       <img src={product.img} alt="" />
+      {product.img}
       </div>
     <div className="">
-      <h2 className="text-3xl font-bold">{product.name}</h2>
+      <h2 className="text-xl sm:text-3xl font-bold">{product.name}</h2>
     </div>
     <div>
       <h2>{product.description}
@@ -47,7 +54,7 @@ const Card = ({ handleCart, productData, setCartItem, cartItem}) => {
             })
            }
     <div className="mt-6">
-  <button type="button" onClick={()=>handleCart(product)} className="btn btn-primary btn-block">
+  <button type="button" onClick={()=>handleCart(product)} className="btn btn-primary ">
     {
       btnText ? 'Buy now' : 'Added to cart'
    }</button>

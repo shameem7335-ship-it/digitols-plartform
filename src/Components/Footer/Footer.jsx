@@ -7,9 +7,9 @@ import twtr from '../../assets/products/Twitter.png'
 const Footer = () => {
     return (
         <div className='container mx-auto'>
-            <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 flex ">
-  <nav className='flex-1 mx-20'>
-    <h6 className="footer-title text-5xl">Digitools</h6>
+            <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 ">
+  <nav className='flex-1 '>
+    <h6 className="footer-title  sm:text-4xl">Digitools</h6>
     <p>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
   </nav>
   <nav className='flex-1'>

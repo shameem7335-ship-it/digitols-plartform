@@ -3,12 +3,12 @@ import React from 'react';
 
 const Navbar = ({cartItem}) => {
     return (
-        <div className='container mx-auto sticky top-0 z-50'>
-        <div className="navbar bg-base-100 shadow-sm flex justify-between">
+        <div className=' sticky top-0 z-50 px-0 sm:px-6'>
+        <div className="navbar bg-base-100 shadow-sm  flex justify-between px-15">
   <div className="flex">
-    <a className=" text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
+    <a className="text-xl sm:text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
   </div>
-  <div className='flex items-center'>
+  <div className='hidden sm:flex items-center'>
     <ul className='flex gap-3 text-xl'>
         <li>Products</li>
         <li>Features</li>
@@ -18,7 +18,7 @@ const Navbar = ({cartItem}) => {
     </ul>
   </div>
   
-  <div className="flex  gap-3">
+  <div className="flex  gap-1 sm:gap-3">
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
         <div className="indicator">
@@ -38,11 +38,11 @@ const Navbar = ({cartItem}) => {
         </div>
       </div>
     </div>
-    <div><button className='btn'>Log in</button></div>
+    <div><button className='btn hidden sm:flex'>Log in</button></div>
     <div className="dropdown dropdown-end">
       <div>
         <div className="">
-          <button className='btn btn-primary'>Get Started</button>
+          <button className='btn btn-sm sm:btn btn-primary'>Get Started</button>
         </div>
       </div>
       <ul
