@@ -3,8 +3,8 @@ import React from 'react';
 
 const Navbar = ({cartItem}) => {
     return (
-        <div className=' sticky top-0 z-50 px-0 sm:px-6'>
-        <div className="navbar bg-base-100 shadow-sm  flex justify-between px-15">
+        <div className='container mx-auto sticky top-0 z-50 '>
+        <div className="navbar bg-base-100 shadow-sm  flex justify-between">
   <div className="flex">
     <a className="text-xl sm:text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
   </div>
@@ -26,23 +26,13 @@ const Navbar = ({cartItem}) => {
           <span className="badge badge-sm indicator-item text-amber-500 text-xl text-bold">{cartItem.length}</span>
         </div>
       </div>
-      <div
-        tabIndex={0}
-        className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
-        <div className="card-body">
-          <span className="text-lg font-bold">{cartItem.length} Items</span>
-          <span className="text-info">Subtotal: $999</span>
-          <div className="card-actions">
-            <button className="btn btn-primary btn-block">View cart</button>
-          </div>
-        </div>
-      </div>
+      
     </div>
     <div><button className='btn hidden sm:flex'>Log in</button></div>
     <div className="dropdown dropdown-end">
       <div>
         <div className="">
-          <button className='btn btn-sm sm:btn btn-primary'>Get Started</button>
+          <button className='btn btn-primary'>Get Started</button>
         </div>
       </div>
       <ul

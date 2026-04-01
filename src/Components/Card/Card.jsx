@@ -23,8 +23,8 @@ const Card = ({ handleCart, productData, setCartItem, cartItem}) => {
 
     }
      return <div key={index}  >
-                <div className="card w-96 bg-base-100 shadow-sm ">
-  <div className="card-body">
+                <div className="card w-86 sm:w-96 bg-base-100 shadow-sm ">
+  <div className="card-body ">
     <div className=' flex justify-center sm:justify-end'>
     <span className={` px-3 py-1 items-center text-center rounded-full
     ${product.tag==='popular' ? ' text-[#BB4D00] bg-[#FEF3C6]': product.tag==='best seller' ? 'text-[#627382] bg-[#E1E7FF]' : product.tag==='new' ?'text-[#0A883E] bg-[#DBFCE7]' : ''}
