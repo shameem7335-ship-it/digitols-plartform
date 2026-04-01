@@ -1,13 +1,19 @@
-import React from 'react';
-import productImg from '../../assets/products/social-media.png';
+import React, { useState } from 'react';
+
+
 const Card = ({ handleCart, productData, setCartItem, cartItem}) => {
     return (
         <div>
             <div className='grid grid-cols-3 gap-4'>
             {productData.map((product, index)  => {
+              console.log(product.img)
+              console.log(product.name)
+
+              const [btnText, setBtnText] = useState(true);
 
               const handleCart = () => {
       setCartItem ([...cartItem, product])
+      setBtnText(false)
 
     }
      return <div key={index}  >
@@ -19,8 +25,8 @@ const Card = ({ handleCart, productData, setCartItem, cartItem}) => {
     `}
     >{product.tag}</span>
     </div>
-    <div>
-      <img src={productImg} alt="" />
+    <div className='border border-2'>
+      <img src={product.img} alt="" />
       </div>
     <div className="">
       <h2 className="text-3xl font-bold">{product.name}</h2>
@@ -41,7 +47,10 @@ const Card = ({ handleCart, productData, setCartItem, cartItem}) => {
             })
            }
     <div className="mt-6">
-      <button type="button" onClick={()=>handleCart(product)} className="btn btn-primary btn-block">Buy now</button>
+  <button type="button" onClick={()=>handleCart(product)} className="btn btn-primary btn-block">
+    {
+      btnText ? 'Buy now' : 'Added to cart'
+   }</button>
     </div>
   </div>
 </div>

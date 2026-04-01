@@ -1,20 +1,25 @@
 import React, { Suspense, use, useMemo, useState } from 'react';
 import AllProducts from '../AllProducts/AllProducts';
 import Cart from '../Cart/Cart';
+import GetStart from '../GetStart/GetStart';
+import Pricing from '../Pricing/Pricing';
+import Footer from '../Footer/Footer';
 
 const fetchPromise = async () => {
     const res = await fetch ('/data.json');
-    return res.json();
+    const data = res.json();
+    console.log(data);
+    return data;
+
 } 
 
-const Products = () => {
+const Products = ({cartItem, setCartItem}) => {
     const[products, setProducts] = useState('products');
     const productsPromise = useMemo(()=>  fetchPromise(), []);
     
    
 
-    const [cartItem, setCartItem] =useState([])
-  const handleCart = () =>{
+  const handleCart = (product) =>{
     setCartItem([...cartItem, product]);
   }
     return (
@@ -40,7 +45,7 @@ const Products = () => {
                     <Cart productsPromise={productsPromise} cartItem={cartItem} setCartItem={setCartItem}></Cart>
                     </Suspense>}
             </div>
-            
+             
         </div>
     );
 };

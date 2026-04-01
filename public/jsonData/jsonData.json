@@ -1,3 +1,5 @@
+
+
 [
   {
     "id": 1,
@@ -8,7 +10,8 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "FileText"
+    "icon": "FileText",
+    "img":"https://i.ibb.co.com/LzN0G76H/images.webp"
   },
   {
     "id": 2,
@@ -19,7 +22,8 @@
     "tag": "best seller",
     "tagType": "best",
     "features": ["500+ templates", "Drag & drop editor", "HD export"],
-    "icon": "Image"
+    "icon": "Image",
+    "img": "https://i.ibb.co/MyMMhCc8/design-tool.png"
   },
   {
     "id": 3,
@@ -30,7 +34,8 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Ad copy generator", "SEO optimization", "Multi-language"],
-    "icon": "PenTool"
+    "icon": "PenTool",
+     "img":"https://i.ibb.co/bjmX5Cg3/img-3.png"
   },
   {
     "id": 4,
@@ -41,7 +46,8 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["200+ components", "Figma files", "Responsive design"],
-    "icon": "Layout"
+    "icon": "Layout",
+    "img":"https://i.ibb.co/JWftYPWp/img-6.png"
   },
   {
     "id": 5,
@@ -52,7 +58,9 @@
     "tag": "best seller",
     "tagType": "best",
     "features": ["4K export", "Transitions", "Audio editing"],
-    "icon": "Video"
+    "icon": "Video",
+    "img": "https://i.ibb.co/tTF2gSQn/img-5.png"
+
   },
   {
     "id": 6,
@@ -63,7 +71,8 @@
     "tag": "new",
     "tagType": "new",
     "features": ["AI logo generator", "Vector files", "Custom colors"],
-    "icon": "Feather"
+    "icon": "Feather",
+    "img":"https://i.ibb.co/MyMMhCc8/design-tool.png"
   },
   {
     "id": 7,
@@ -74,7 +83,8 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Email templates", "Analytics", "Automation"],
-    "icon": "Mail"
+    "icon": "Mail",
+    "img":"https://i.ibb.co/bjmX5Cg3/img-3.png"
   },
   {
     "id": 8,
@@ -85,7 +95,8 @@
     "tag": "best seller",
     "tagType": "best",
     "features": ["10k+ images", "HD quality", "Commercial use"],
-    "icon": "ImagePlus"
+    "icon": "ImagePlus",
+    "img": "https://i.ibb.co/dJ61Rr9R/social-media.png"
   },
   {
     "id": 9,
@@ -96,7 +107,8 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Task tracking", "Collaboration", "Reminders"],
-    "icon": "CheckSquare"
+    "icon": "CheckSquare",
+     "img":"https://i.ibb.co/bjmX5Cg3/img-3.png"
   },
   {
     "id": 10,
@@ -107,6 +119,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Custom domains", "Templates", "SEO ready"],
-    "icon": "Globe"
+    "icon": "Globe",
+    "img":"https://i.ibb.co/0VVKYZkh/Group-7-2.png"
   }
 ]
